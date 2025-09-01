@@ -17,5 +17,23 @@ console.log("Giochiamo a dadi! Chi vincerà, l'Uomo o la macchina?");
 
 //GENERAZIONE RANDOM DEI NUMERI 1-6
 
-const numeroCasuale = Math.floor(Math.random() * 6) + 1;
-console.log(numeroCasuale);
+const numeroGiocatore = Math.floor(Math.random() * 6) + 1; //Tiro del giocatore
+console.log("Il giocatore ha tirando i dadi, ha fatto" + " " + numeroGiocatore);
+
+const numeroPc = Math.floor(Math.random() * 6) + 1; //Tiro del PC
+console.log("Il PC ha tirando i dadi, ha fatto" + " " + numeroPc);
+
+//CONFRONTARE I RISULTATI
+
+
+
+//RISULTATO
+
+/*
+1) generare un numero a per il giocatore
+2) generare un numero b per il pc
+3) confrontare i due numeri (a , b)
+3a) SE a > b => vince il giocatore
+3b) SE a < b => vince il pc
+3c) SE a = b => pareggio
+4) console del risultato */
