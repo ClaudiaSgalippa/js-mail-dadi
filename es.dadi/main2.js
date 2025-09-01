@@ -13,3 +13,9 @@ si ma noi cosa vogliamo fare?
 torniamo a scrivere in italiano
 proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano" */
 
+console.log("Giochiamo a dadi! Chi vincerà, l'Uomo o la macchina?");
+
+//GENERAZIONE RANDOM DEI NUMERI 1-6
+
+const numeroCasuale = Math.floor(Math.random() * 6) + 1;
+console.log(numeroCasuale);
