@@ -25,15 +25,13 @@ console.log("Il PC ha tirando i dadi, ha fatto" + " " + numeroPc);
 
 //CONFRONTARE I RISULTATI
 
+if (numeroGiocatore > numeroPc) { //Se il numero del giocatore è più alto
+    console.log("L'Uomo ha battuto la macchina!");
 
+} else if (numeroGiocatore < numeroPc) { //Se il numero del PC è più alto
+    console.log("La macchina ha battuto l'Uomo!");
 
-//RISULTATO
+} else if (numeroGiocatore == numeroPc) { //Se il numero del giocatore è uguale a quello del PC
+    console.log("La sfida continua, per ora è parità!");
 
-/*
-1) generare un numero a per il giocatore
-2) generare un numero b per il pc
-3) confrontare i due numeri (a , b)
-3a) SE a > b => vince il giocatore
-3b) SE a < b => vince il pc
-3c) SE a = b => pareggio
-4) console del risultato */
+}
