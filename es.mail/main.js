@@ -19,15 +19,31 @@ const emailList = [
     "alessandro.belli@genericmail.com",
     "alessio.dipietro@genericmail.com",
     "silvia.petula@genericmail.com",
-    "alerto.longobardi@genericmail.com"
+    "alerto.longobardi@genericmail.com",
+    "sara.dagapito@genericmail.com"
 ];
 
 //RICHIESTA E-MAIL UTENTE
 
-const emailUtente = prompt("Inserisci la tua e-mail qui sotto");
+const emailUtente = prompt("Inserisci la tua e-mail qui sotto"); //Richiesta e-mail
 
 //CHECK E-MAIL
 
-if (emailUtente)
+let inList = false; //valore booleano true/false
+
+for(let i = 0; i < emailList.length; i++) { //Condizione
+
+    if (emailList[i] === emailUtente) { //Confronto
+        inList = true; //Check
+        break; //Chiusura del cycle
+    }
+}
 
 //MESSAGGIO ESITO CHECK SI/NO
+
+if(inList) {
+    console.log("Benvenuto, hai avuto accesso alla festa!") //Risultato positivo
+
+} else {
+    console.log("Mi dispiace, non hai accesso alla festa..") //Risultato negativo
+}
