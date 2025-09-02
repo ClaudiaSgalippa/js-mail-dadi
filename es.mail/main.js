@@ -19,7 +19,7 @@ const emailList = [
     "alessandro.belli@genericmail.com",
     "alessio.dipietro@genericmail.com",
     "silvia.petula@genericmail.com",
-    "alerto.longobardi@genericmail.com",
+    "alberto.longobardi@genericmail.com",
     "sara.dagapito@genericmail.com"
 ];
 
